@@ -71,6 +71,7 @@ p{margin:0;max-width:65ch}
 .top nav{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:.95rem}
 .top nav a{color:var(--ink);text-decoration:none;padding-block:4px;border-bottom:1px solid transparent}
 .top nav a:hover{border-color:var(--ink)}
+.top nav a.tel{font-weight:600;white-space:nowrap}
 
 /* hero */
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,56px);align-items:center;padding-block:clamp(32px,6vw,72px)}
@@ -108,6 +109,13 @@ section.job{padding-block:clamp(40px,7vw,88px);border-bottom:1px solid var(--lin
 .shots figure,.seq figure,.small figure{margin:0;min-width:0}
 
 /* build sequence */
+.job-cta{max-width:none;margin:30px 0 0;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px}
+.job-cta b{font-family:var(--serif);font-weight:400;font-size:1.2rem;margin-right:auto}
+.job-cta a:not(.btn),.small-grid a,.contact a,footer a{color:inherit}
+.more{border-top:1px solid var(--line);padding-top:14px}
+.more summary{cursor:pointer;font-weight:500;font-size:.95rem}
+.more .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px;margin-top:16px}
+.more .grid .full{grid-column:1/-1}
 .seq-title{margin:34px 0 12px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 .seq{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(168px,1fr);gap:10px;overflow-x:auto;padding-bottom:10px;scrollbar-width:thin}
 .seq img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--panel)}
@@ -157,7 +165,7 @@ footer{padding-block:28px;color:var(--muted);font-size:.9rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
 
 @media (max-width:860px){
-  .hero .wrap,.job-head,.two{grid-template-columns:minmax(0,1fr)}
+  .hero .wrap,.job-head,.two,.more .grid{grid-template-columns:minmax(0,1fr)}
   .services .wrap{grid-template-columns:minmax(0,1fr)}
   .svc{padding:22px 0}
   .svc + .svc{padding-left:0;border-left:0;border-top:1px solid var(--line)}
@@ -167,6 +175,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 }
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GeneralContractor","name":"Thoughtful Construction & Groundworks","url":"https://thoughtfulconstruction.co.uk/","telephone":"+447933005029","email":"hello@thoughtfulconstruction.co.uk","image":"https://thoughtfulconstruction.co.uk/img/tree-10.jpg","logo":"https://thoughtfulconstruction.co.uk/apple-touch-icon.png","description":"New builds, renovations, kitchens, bathrooms, decks and groundworks for period homes and difficult sites around Fowey, Cornwall.","areaServed":["Fowey","Polruan","Lostwithiel","St Austell","Cornwall"],"sameAs":["https://www.instagram.com/thoughtfulconstruction/"]}
+</script>
 </head>
 <body>
 <header class="top">
@@ -176,7 +187,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
       <span><b>Thoughtful</b><small>Construction &amp; Groundworks</small></span>
     </a>
     <nav aria-label="Sections">
-      <a href="#work">Work</a><a href="#away">If you're away</a><a href="#process">How a job runs</a><a href="#enquire">Enquire</a>
+      <a href="#work">Work</a><a href="#away">If you're away</a><a href="#process">How a job runs</a><a href="#enquire">Enquire</a><a class="tel" href="tel:+447933005029">07933 005029</a>
     </nav>
   </div>
 </header>
@@ -197,7 +208,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
   </div>
 </section>
 
-<section class="services" aria-label="What I do">
+<section class="services" aria-label="What we do">
   <div class="wrap">
     <div class="svc">
       <h3>New builds and renovation</h3>
@@ -267,6 +278,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <p>An exposed timber ceiling, a sleeping loft reached by a hand-made ladder, and a wood burner on a stone hearth.</p>
       </article>
     </div>
+    <p class="job-cta"><b>Planning a new build or a full renovation?</b><a class="btn" href="#enquire" data-type="New build or extension">Tell us about your project</a><span>or call <a href="tel:+447933005029">07933 005029</a></span></p>
   </div>
 </section>
 
@@ -300,6 +312,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
       <figure><img loading="lazy" src="img/bath-13.jpg" width="360" height="480" alt="Stone tiles being laid on a decoupling membrane"><figcaption><i>08</i>Membrane and stone</figcaption></figure>
       <figure><img loading="lazy" src="img/bath-15.jpg" width="480" height="360" alt="Stone floor laid"><figcaption><i>09</i>Floor laid</figcaption></figure>
     </div>
+    <p class="job-cta"><b>A bathroom or a period house that needs proper work?</b><a class="btn" href="#enquire" data-type="Bathroom">Tell us about your project</a><span>or call <a href="tel:+447933005029">07933 005029</a></span></p>
   </div>
 </section>
 
@@ -330,6 +343,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
       <figure><img loading="lazy" src="img/deck-10.jpg" width="1024" height="768" alt="Balustrade posts and rails being fitted"><figcaption><i>07</i>Balustrade</figcaption></figure>
       <figure><img loading="lazy" src="img/deck-11.jpg" width="1024" height="768" alt="Balustrade complete on all sides"><figcaption><i>08</i>Rails complete</figcaption></figure>
     </div>
+    <p class="job-cta"><b>A deck, garden room or timber structure in mind?</b><a class="btn" href="#enquire" data-type="Deck or garden room">Tell us about your project</a><span>or call <a href="tel:+447933005029">07933 005029</a></span></p>
   </div>
 </section>
 
@@ -352,6 +366,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <figure><img loading="lazy" src="img/ground-07.jpg" width="360" height="480" alt="Sewage treatment plant set in its excavation"></figure>
       </div>
     </div>
+    <p class="job-cta"><b>A sloping plot, retaining wall or drainage to sort out?</b><a class="btn" href="#enquire" data-type="Groundworks or drainage">Tell us about your project</a><span>or call <a href="tel:+447933005029">07933 005029</a></span></p>
   </div>
 </section>
 
@@ -375,7 +390,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <div class="pair"><img loading="lazy" src="img/made-12.jpg" width="1024" height="768" alt="Reclaimed timber coffee table on steel legs"><img loading="lazy" src="img/made-05.jpg" width="768" height="1024" alt="Ceiling-hung timber clothes airer in a pine-lined room"></div>
         <span class="label">Made to order</span>
         <h3>Tables, benches and fitted pieces from our own workshop.</h3>
-        <p>Dining tables, benches and one-off pieces made to order in reclaimed and solid timber, often for the houses we're working on.</p>
+        <p>Dining tables, benches and one-off pieces made to order in reclaimed and solid timber, often for the houses we're working on. <a href="#enquire" data-type="Kitchen, joinery or furniture">Ask about a piece</a>.</p>
       </article>
     </div>
   </div>
@@ -430,31 +445,35 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
       <div class="stack">
         <span class="label">Enquire</span>
         <h2>Tell us about your project</h2>
-        <p>Answer what you can. It writes a short message you can copy and send to us by email or text, so we have what we need before we speak.</p>
-        <div class="contact" id="contact"></div>
+        <p>Call, text or email us directly. Or fill in four lines and it writes the message for you, ready to send.</p>
+        <div class="contact"><div><div class="label">Phone or text</div><span><a href="tel:+447933005029">07933 005029</a></span></div><div><div class="label">Email</div><span><a href="mailto:hello@thoughtfulconstruction.co.uk">hello@thoughtfulconstruction.co.uk</a></span></div><div><div class="label">Instagram</div><span><a href="https://www.instagram.com/thoughtfulconstruction/" rel="noopener">@thoughtfulconstruction</a></span></div></div>
       </div>
       <div>
         <form id="enq" novalidate>
           <label>Your name<input id="f-name" name="name" autocomplete="name" required></label>
           <label>Best phone or email<input id="f-reach" name="reach" autocomplete="email" required></label>
-          <label>Where is the property?<input id="f-place" name="place" placeholder="Town or village"></label>
-          <label>Is it listed, or let to guests?
-            <select id="f-status" name="status"><option value="">Choose one</option><option>Neither</option><option>Listed building</option><option>Holiday let</option><option>Listed and let</option><option>Not sure</option></select></label>
+          <label class="full">Where is the property?<input id="f-place" name="place" placeholder="Town or village"></label>
           <label class="full">What's the job?<span class="hint">Room or area, what you want changed, and whether you have drawings.</span><textarea id="f-job" name="job" required></textarea></label>
-          <label>Kind of work
-            <select id="f-type" name="type"><option value="">Choose one</option><option>Bathroom</option><option>Renovation of several rooms</option><option>Deck or garden room</option><option>Groundworks or drainage</option><option>Something else</option></select></label>
-          <label>Rough budget
+          <details class="full more" id="f-more"><summary>Add more detail (optional)</summary>
+            <div class="grid">
+              <label>Kind of work
+            <select id="f-type" name="type"><option value="">Choose one</option><option>New build or extension</option><option>Bathroom</option><option>Renovation of several rooms</option><option>Deck or garden room</option><option>Groundworks or drainage</option><option>Kitchen, joinery or furniture</option><option>Something else</option></select></label>
+              <label>Rough budget
             <select id="f-budget" name="budget"><option value="">Choose one</option><option>Under £8,000</option><option>£8,000 to £15,000</option><option>£15,000 to £30,000</option><option>£30,000 to £60,000</option><option>Over £60,000</option><option>Not sure yet</option></select></label>
-          <label>When would you like it done?<input id="f-when" name="when" placeholder="For example: before Easter"></label>
-          <label>Will you be nearby during the work?
+              <label>When would you like it done?<input id="f-when" name="when" placeholder="For example: before Easter"></label>
+              <label>Is it listed, or let to guests?
+            <select id="f-status" name="status"><option value="">Choose one</option><option>Neither</option><option>Listed building</option><option>Holiday let</option><option>Listed and let</option><option>Not sure</option></select></label>
+              <label>Will you be nearby during the work?
             <select id="f-local" name="local"><option value="">Choose one</option><option>Yes, I live there</option><option>Sometimes</option><option>No, someone holds the keys</option></select></label>
-          <label class="full">How did you hear about us?<input id="f-source" name="source"></label>
+              <label class="full">How did you hear about us?<input id="f-source" name="source"></label>
+            </div>
+          </details>
           <div class="full actions"><button class="btn" type="submit">Write my message</button><span class="err" id="f-err" role="alert" hidden></span></div>
         </form>
         <div class="result" id="result" hidden>
           <span class="label">Your message, ready to send</span>
           <textarea id="f-out" readonly aria-label="Your enquiry message"></textarea>
-          <div class="actions"><button class="btn" type="button" id="f-copy">Copy message</button><span id="f-copied" class="label" role="status"></span></div>
+          <div class="actions"><a class="btn" id="f-mail" href="mailto:hello@thoughtfulconstruction.co.uk">Send by email</a><button class="btn ghost" type="button" id="f-copy">Copy message</button><span id="f-copied" class="label" role="status"></span></div>
           <p id="f-send"></p>
         </div>
       </div>
@@ -464,7 +483,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 </main>
 
 <footer>
-  <div class="wrap"><span>Thoughtful Construction &amp; Groundworks &middot; Fowey estuary, Cornwall</span><span>Public liability insured &middot; All photos are of our own work</span></div>
+  <div class="wrap"><span>Thoughtful Construction &amp; Groundworks &middot; Fowey estuary, Cornwall</span><span><a href="tel:+447933005029">07933 005029</a> &middot; <a href="mailto:hello@thoughtfulconstruction.co.uk">hello@thoughtfulconstruction.co.uk</a> &middot; <a href="https://www.instagram.com/thoughtfulconstruction/" rel="noopener">@thoughtfulconstruction</a></span><span>Public liability insured &middot; All photos are of our own work</span></div>
 </footer>
 
 <script>
@@ -472,23 +491,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 var CONTACT = { phone: "07933 005029", email: "hello@thoughtfulconstruction.co.uk", instagram: "@thoughtfulconstruction" };
 
 (function(){
-  var box = document.getElementById("contact");
-  function add(label, value){
-    var d = document.createElement("div");
-    var l = document.createElement("div"); l.className = "label"; l.textContent = label;
-    var v = document.createElement("span"); v.textContent = value;
-    d.appendChild(l); d.appendChild(v); box.appendChild(d);
-  }
-  if (CONTACT.phone) { add("Phone or text", CONTACT.phone);
-    var sp = box.lastChild.querySelector("span"), ln = document.createElement("a");
-    ln.href = "tel:+44" + CONTACT.phone.replace(/\s/g, "").replace(/^0/, ""); ln.textContent = CONTACT.phone;
-    ln.style.color = "inherit"; sp.textContent = ""; sp.appendChild(ln); }
-  if (CONTACT.email) { add("Email", CONTACT.email);
-    var se = box.lastChild.querySelector("span"), le = document.createElement("a");
-    le.href = "mailto:" + CONTACT.email; le.textContent = CONTACT.email; le.style.color = "inherit";
-    se.textContent = ""; se.appendChild(le); }
-  if (CONTACT.instagram) add("Instagram", CONTACT.instagram);
-
   var form = document.getElementById("enq"), out = document.getElementById("f-out"),
       res = document.getElementById("result"), err = document.getElementById("f-err"),
       send = document.getElementById("f-send"), copied = document.getElementById("f-copied");
@@ -506,23 +508,22 @@ var CONTACT = { phone: "07933 005029", email: "hello@thoughtfulconstruction.co.u
       "I'd like to talk about some work.", "",
       "Name: " + val("f-name"),
       "Reach me on: " + val("f-reach"),
-      "Property: " + (val("f-place") || "not given") + (val("f-status") ? " (" + val("f-status").toLowerCase() + ")" : ""),
-      "Kind of work: " + (val("f-type") || "not given"),
-      "The job: " + val("f-job"),
-      "Rough budget: " + (val("f-budget") || "not given"),
-      "Timing: " + (val("f-when") || "flexible"),
-      "Nearby during the work: " + (val("f-local") || "not given"),
-      "Heard about you from: " + (val("f-source") || "not given")
+      "The job: " + val("f-job")
     ];
+    function opt(label, id){ if (val(id)) lines.push(label + ": " + val(id)); }
+    opt("Property", "f-place"); opt("Kind of work", "f-type"); opt("Rough budget", "f-budget"); opt("Timing", "f-when");
+    opt("Listed or let", "f-status"); opt("Nearby during the work", "f-local"); opt("Heard about you from", "f-source");
     out.value = lines.join("\n");
-    var where = [];
-    if (CONTACT.email) where.push("email it to " + CONTACT.email);
-    if (CONTACT.phone) where.push("text it to " + CONTACT.phone);
-    send.textContent = where.length ? "Copy it, then " + where.join(" or ") + ". We reply the same day."
-                                    : "Copy it and send it to us by email or text.";
+    document.getElementById("f-mail").href = "mailto:" + CONTACT.email + "?subject=" +
+      encodeURIComponent("Project enquiry from " + val("f-name")) + "&body=" + encodeURIComponent(out.value);
+    send.textContent = "Or copy it and text it to " + CONTACT.phone + ". We reply the same day.";
     copied.textContent = "";
     res.hidden = false;
     res.scrollIntoView({block: "nearest"});
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll("a[data-type]"), function(a){
+    a.addEventListener("click", function(){ document.getElementById("f-type").value = a.getAttribute("data-type"); });
   });
 
   document.getElementById("f-copy").addEventListener("click", function(){
