@@ -23,10 +23,11 @@ header = between('<header class="top">', '</header>')
 footer = between('<footer>', '</footer>')
 enquire = between('<section class="enquire" id="enquire">', '</section>')
 places = between('<ul class="places">', '</ul>')
-jobs = ['<section class="job">' + part.split('</section>')[0] + '</section>'
-        for part in home.split('<section class="job">')[1:]]
+projects = open("tools/projects.html").read()
+jobs = ['<section class="job"' + part.split('</section>')[0] + '</section>'
+        for part in projects.split('<section class="job"')[1:]]
 JOB = {"treehouse": jobs[0], "bathroom": jobs[1], "deck": jobs[2], "groundworks": jobs[3]}
-cards = re.findall(r'<article>.*?</article>', home, flags=re.S)
+cards = re.findall(r'<article>.*?</article>', projects + home, flags=re.S)
 def card(label):
     hits = [c for c in cards if label in c]
     assert len(hits) == 1, label
@@ -133,15 +134,15 @@ for P in PAGES:
 <main id="top">
 <section class="hero">
   <div class="wrap">
-    <div class="stack">
-      <p class="label crumb"><a href="/">Thoughtful</a><span>{esc(P["label"])}</span><span>Fowey and south Cornwall</span></p>
-      <h1>{P["h1"]}</h1>
+    <p class="label crumb"><a href="/">Thoughtful</a><span>{esc(P["label"])}</span></p>
+    <h1>{P["h1"]}</h1>
+    <div class="sub">
       <p class="lede">{P["lede"]}</p>
       <div class="actions"><a class="btn" href="#enquire">Tell us about your project</a><a class="btn ghost" href="tel:+447933005029">Call 07933 005029</a></div>
     </div>
-    <figure>
+    <figure{' class="small"' if w < 1000 else ''}>
       <img src="/img/{f}" width="{w}" height="{h}" alt="{alt}">
-      <figcaption class="label">{P["cap"]}, built by Thoughtful</figcaption>
+      <figcaption>{P["cap"]}, built by Thoughtful</figcaption>
     </figure>
   </div>
 </section>
@@ -149,7 +150,7 @@ for P in PAGES:
 <section class="plain">
   <div class="wrap two">
     <div class="stack">
-      <span class="label">{esc(P["label"])}</span>
+      <p class="label">{esc(P["label"])}</p>
       <h2>{P["h2"]}</h2>
       <p>{P["intro"]}</p>
       <div class="stack" style="margin-top:14px;gap:.7rem">
