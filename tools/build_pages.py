@@ -134,14 +134,14 @@ for P in PAGES:
 <section class="hero">
   <div class="wrap">
     <div class="stack">
-      <p class="label crumb"><a href="/">Thoughtful</a> &middot; {esc(P["label"])} &middot; Fowey and south Cornwall</p>
+      <p class="label crumb"><a href="/">Thoughtful</a><span>{esc(P["label"])}</span><span>Fowey and south Cornwall</span></p>
       <h1>{P["h1"]}</h1>
       <p class="lede">{P["lede"]}</p>
       <div class="actions"><a class="btn" href="#enquire">Tell us about your project</a><a class="btn ghost" href="tel:+447933005029">Call 07933 005029</a></div>
     </div>
     <figure>
       <img src="/img/{f}" width="{w}" height="{h}" alt="{alt}">
-      <figcaption class="label">{P["cap"]} &middot; built by Thoughtful</figcaption>
+      <figcaption class="label">{P["cap"]}, built by Thoughtful</figcaption>
     </figure>
   </div>
 </section>
