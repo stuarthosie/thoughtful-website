@@ -220,6 +220,14 @@ footer .sep > * + *::before{content:"/";margin:0 10px;opacity:.5}
 .gallery .wide{grid-column:span 2}
 .index img{width:176px}
 .index li a{grid-template-columns:minmax(0,5fr) minmax(0,3fr) minmax(0,2fr) 176px}
+.seals a,.more-link a{display:flex;align-items:center;gap:14px;text-decoration:none;min-width:0}
+.seals a:hover b,.more-link a:hover span{text-decoration:underline}
+.more-link{max-width:none;margin-top:22px}
+footer .seals{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));flex-basis:100%;margin:0 0 18px;border-color:var(--band-line);color:var(--on-band)}
+footer .seals small{color:var(--on-band-muted)}
+.seals small{overflow-wrap:anywhere}
+footer .sep a{white-space:nowrap}
+@media (max-width:520px){footer .sep{display:flex;flex-direction:column;gap:4px}footer .sep > * + *::before{content:none}}
 @media (max-width:1000px){.seals{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:860px){
   .intro,.svcs{grid-template-columns:minmax(0,1fr)}
