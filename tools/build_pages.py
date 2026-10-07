@@ -18,7 +18,7 @@ def between(a, b, text=home):
     i = text.index(a); j = text.index(b, i) + len(b)
     return text[i:j]
 
-head_links = between('<link rel="icon" href="/favicon.ico"', '<link rel="stylesheet" href="/style.css">')
+head_links = between('<link rel="icon" href="/favicon.ico', '<link rel="stylesheet" href="/style.css">')
 header = between('<header class="top">', '</header>')
 footer = between('<footer>', '</footer>')
 enquire = between('<section class="enquire" id="enquire">', '</section>')
