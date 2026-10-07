@@ -189,4 +189,44 @@ footer .sep > * + *::before{content:"/";margin:0 10px;opacity:.5}
   .job-cta .btn{width:100%;text-align:center}
   .contact > div{grid-template-columns:minmax(0,1fr)}
 }
+
+/* badges and icons */
+.sprite{position:absolute}
+.ico{flex:none;width:52px;height:52px;border:1.5px solid currentColor;border-radius:50%;display:grid;place-items:center;font-style:normal}
+.ico svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.seals{margin:clamp(28px,4vw,48px) 0 0;padding:22px 0;border-block:1px solid var(--line);list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 28px}
+.seals li{display:flex;align-items:center;gap:14px;min-width:0}
+.seals b{display:block;font-weight:600;line-height:1.25}
+.seals small{display:block;font-size:.86rem;color:var(--muted);margin-top:2px}
+.ticks.icons li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:0 18px;align-items:start;padding-block:16px 18px}
+.ticks.icons .ico{grid-row:span 2}
+.ticks.icons b{align-self:end}
+
+.aside-img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 70%;margin-top:14px;background:var(--panel)}
+/* intro, services with photographs, gallery */
+.intro{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:24px 48px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.intro .big{max-width:34ch}
+.intro .actions{justify-content:flex-end;margin:0}
+.svcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px clamp(20px,3vw,36px)}
+.svcs .svc{border-top:0;padding:0}
+.svc-img{display:block;margin-bottom:16px}
+.svc-img img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--panel)}
+.svcs .svc h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;letter-spacing:-.015em;line-height:1.15;margin-bottom:8px}
+.svcs .svc li{padding:7px 0;border-top:1px solid var(--line)}
+.plain > .wrap > h2{margin-bottom:28px}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(170px,21vw,290px);gap:10px}
+.gallery img{width:100%;height:100%;object-fit:cover;background:var(--panel)}
+.gallery .tall{grid-row:span 2}
+.gallery .wide{grid-column:span 2}
+.index img{width:176px}
+.index li a{grid-template-columns:minmax(0,5fr) minmax(0,3fr) minmax(0,2fr) 176px}
+@media (max-width:1000px){.seals{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){
+  .intro,.svcs{grid-template-columns:minmax(0,1fr)}
+  .intro .actions{justify-content:flex-start}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:44vw}
+  .index li a{grid-template-columns:minmax(0,1fr) 96px}
+  .index img{width:96px}
+}
+@media (max-width:520px){.seals{grid-template-columns:minmax(0,1fr)}}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
