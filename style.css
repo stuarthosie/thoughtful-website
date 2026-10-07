@@ -29,7 +29,7 @@ img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-underline-offset:4px;text-decoration-thickness:1px}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,.seq:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance}
-h1{font-size:clamp(2.5rem,7.2vw,6.2rem);line-height:.98;letter-spacing:-.03em}
+h1{font-size:clamp(2.1rem,5.2vw,4.4rem);line-height:1.02;letter-spacing:-.025em}
 h2{font-size:clamp(1.9rem,3.8vw,3.1rem);line-height:1.04;letter-spacing:-.025em}
 h3{font-size:1.45rem;line-height:1.15;letter-spacing:-.015em}
 p{margin:0;max-width:62ch}
@@ -60,7 +60,7 @@ p{margin:0;max-width:62ch}
 
 /* hero */
 .hero .wrap{padding-block:clamp(36px,7vw,104px) 0}
-.hero h1{max-width:15ch}
+.hero h1{max-width:20ch}
 .hero .crumb{margin-bottom:clamp(18px,3vw,36px)}
 .crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
 .crumb span::before{content:"/";margin:0 10px;opacity:.45}
