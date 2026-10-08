@@ -11,4 +11,4 @@ The phone number, email and Instagram name appear in the header, footer and enqu
 
 ## Client reviews
 
-The home page has a "What clients say" section (`id="reviews"`) that is switched off with the `hidden` attribute until there is a real Google review to show. The comment above it in `index.html` has the pattern for adding one. Use the reviewer's words exactly as they appear on Google, then remove `hidden`. The review link for clients is https://g.page/r/CZiv4HWzdBLGEBM/review.
+The home page has a "What clients say" section (`id="reviews"`) that is switched off with the `hidden` attribute until there is a real Google review to show. It is laid out as Google-style review cards, but it is copied by hand from the Business Profile and is not a live feed, so the stars, wording, names, score and count must be kept the same as Google shows. The comment above it in `index.html` has the pattern for adding a review. Use the reviewer's words exactly as they appear on Google, then remove `hidden`. The review link for clients is https://g.page/r/CZiv4HWzdBLGEBM/review.
