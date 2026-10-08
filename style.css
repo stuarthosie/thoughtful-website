@@ -97,6 +97,15 @@ section.plain{padding-block:clamp(56px,9vw,120px) 0}
 .ticks li{padding:14px 0 16px;border-top:1px solid var(--line)}
 .ticks b{display:block;font-weight:600}
 .ticks span{color:var(--muted);font-size:.96rem}
+.quotes{margin:0;padding:0;list-style:none}
+.quotes li{padding:18px 0 22px;border-top:1px solid var(--line)}
+.quotes figure{margin:0}
+.quotes blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.35;letter-spacing:-.01em}
+.quotes blockquote p{margin:0}
+.quotes blockquote p + p{margin-top:.6em}
+.quotes figcaption{margin-top:12px;font-size:.96rem}
+.quotes figcaption b{display:block;font-weight:600}
+.quotes figcaption span{color:var(--muted)}
 .steps{margin:0;padding:0;list-style:none;counter-reset:s}
 .steps li{counter-increment:s;display:grid;grid-template-columns:2.8rem minmax(0,1fr);gap:0 10px;padding:14px 0 16px;border-top:1px solid var(--line)}
 .steps li::before{content:counter(s);grid-row:span 2;font-family:var(--serif);font-size:1.6rem;line-height:1.1}
