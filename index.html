@@ -171,27 +171,24 @@
   </div>
 </section>
 
-<!-- Client reviews. Switched off until there is a real Google review to show.
-     These cards are copied by hand from our Google Business Profile. They are not a
-     live feed, so the stars, wording, name and date must match Google exactly.
+<!-- Client reviews. Switched on 9 October 2026.
+     The cards show each reviewer's name, date and stars only. The review wording is
+     left on Google, because the site does not name individuals in the firm.
+     This is copied by hand from our Google Business Profile and is not a live feed,
+     so the score, count, names and stars must match what Google shows.
      Never write, shorten or alter a review ourselves.
 
-     To switch on:
-     1. Copy the example below into the <ul class="g-list">, once per review.
-        data-stars is the number of stars the reviewer gave (1 to 5).
+     When a new review arrives:
+     1. Copy a <li class="g-card"> below and change the initial, name, month and
+        data-stars (the number of stars the reviewer gave, 1 to 5).
      2. Set the summary line to what Google shows: the score, the count, and the
         stars (for a score that is not a whole number, such as 4.7, add
         style="--n:4.7" to that g-stars span). Set the "checked" date to today.
-     3. Delete the word "hidden" from the <section> line.
-
-      <li class="g-card">
-        <div class="g-who"><span class="g-av" aria-hidden="true">A</span><b>Name as shown on Google</b><small>Month Year</small><svg class="g-mark" aria-hidden="true"><use href="#i-g"/></svg></div>
-        <span class="g-stars" data-stars="5" role="img" aria-label="5 out of 5 stars"></span>
-        <p>The review, word for word.</p>
-        <a href="LINK TO THIS REVIEW ON GOOGLE" rel="noopener">Read on Google</a>
-      </li>
+     To show a review's wording as well, add <p>The review, word for word.</p>
+     under the stars. To switch the section off, add the word "hidden" to the
+     <section> line.
 -->
-<section class="plain" id="reviews" hidden>
+<section class="plain" id="reviews">
   <div class="wrap">
     <p class="label">What clients say</p>
     <h2>Reviews from our clients</h2>
@@ -200,13 +197,23 @@
         <svg class="g-mark" aria-hidden="true"><use href="#i-g"/></svg>
         <div class="g-sum">
           <b>Google reviews</b>
-          <span><span class="g-score">5.0</span><span class="g-stars" data-stars="5" role="img" aria-label="5.0 out of 5 stars"></span><span class="g-count">0 reviews</span></span>
+          <span><span class="g-score">5.0</span><span class="g-stars" data-stars="5" role="img" aria-label="5.0 out of 5 stars"></span><span class="g-count">2 reviews</span></span>
         </div>
         <a class="g-btn" href="https://g.page/r/CZiv4HWzdBLGEBM/review" rel="noopener">Review us on Google</a>
       </div>
       <ul class="g-list">
+        <li class="g-card">
+          <div class="g-who"><span class="g-av" aria-hidden="true">A</span><b>Alexandra M-H</b><small>October 2026</small><svg class="g-mark" aria-hidden="true"><use href="#i-g"/></svg></div>
+          <span class="g-stars" data-stars="5" role="img" aria-label="5 out of 5 stars"></span>
+          <a href="https://g.page/r/CZiv4HWzdBLGEBM" rel="noopener">Read the review on Google</a>
+        </li>
+        <li class="g-card">
+          <div class="g-who"><span class="g-av" aria-hidden="true">S</span><b>Stephen McCleave</b><small>October 2026</small><svg class="g-mark" aria-hidden="true"><use href="#i-g"/></svg></div>
+          <span class="g-stars" data-stars="5" role="img" aria-label="5 out of 5 stars"></span>
+          <a href="https://g.page/r/CZiv4HWzdBLGEBM" rel="noopener">Read the review on Google</a>
+        </li>
       </ul>
-      <p class="g-foot">Copied from our Google Business Profile exactly as written, checked <span class="g-date">October 2026</span>. <a href="https://g.page/r/CZiv4HWzdBLGEBM" rel="noopener">See all our reviews on Google</a></p>
+      <p class="g-foot">Ratings as shown on our Google Business Profile, checked <span class="g-date">9 October 2026</span>. <a href="https://g.page/r/CZiv4HWzdBLGEBM" rel="noopener">Read the reviews on Google</a></p>
     </div>
   </div>
 </section>
