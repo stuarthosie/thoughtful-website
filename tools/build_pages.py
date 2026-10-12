@@ -88,7 +88,7 @@ PAGES = [
   desc="Gabion and concrete retaining walls, sewage treatment plants, drainage and foundations on steep and awkward plots around Fowey.",
   label="Groundworks and drainage", h1="Retaining walls, drainage and treatment plants on steep plots.",
   lede="Before anything can be built on a slope, the ground has to be held back and the water dealt with. We run groundworks from the first cut to the finished wall, on sites a lorry can't easily reach.",
-  img=("ground-06.jpg", 480, 360, "Finished tiered gabion retaining wall on a wooded slope near Fowey"),
+  img=("ground-06.jpg", 1600, 1200, "Finished tiered gabion retaining wall on a wooded slope near Fowey"),
   cap="Gabion retaining wall, near Fowey",
   h2="What we take on", intro="The work in the ground that everything else depends on.",
   ticks=[("Retaining walls", "Tiered gabion walls and shuttered reinforced concrete."),
