@@ -324,8 +324,8 @@ section.feature{padding-block:clamp(56px,9vw,120px) 0;overflow:hidden}
 .feature .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px)}
 .feature .big-img{width:100%;aspect-ratio:4/4.8;object-fit:cover;background:var(--panel)}
 .feature .side{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:36px}
-.feature .side > .tree{position:absolute;inset:-4% -14% -8% -6%;width:auto;height:auto;color:var(--motif);z-index:0}
-.feature .small-img{position:relative;z-index:1;width:58%;aspect-ratio:4/3.3;object-fit:cover;align-self:flex-end;background:var(--panel)}
+.feature .side > .tree{position:absolute;inset:-6% -22% -10% 30%;width:auto;height:auto;color:var(--motif);z-index:0}
+.feature .small-img{position:relative;z-index:1;width:82%;aspect-ratio:4/3;object-fit:cover;object-position:50% 60%;align-self:flex-start;margin-top:clamp(28px,5vw,72px);background:var(--panel)}
 .feature .stack{position:relative;z-index:1;max-width:38ch}
 .feature .stack p:not(.label){color:var(--muted)}
 .feature .label{color:var(--muted)}
