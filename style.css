@@ -165,6 +165,8 @@ section.small{padding-block:clamp(56px,9vw,120px) 0}
 .small-grid article{display:flex;flex-direction:column;gap:8px;min-width:0}
 .small-grid .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:8px}
 .small-grid img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--panel)}
+.small-grid .pair.stack{grid-template-columns:minmax(0,1fr)}
+.small-grid .pair.stack img{aspect-ratio:4/3}
 .small-grid .label{color:var(--muted);font-weight:500;font-size:.88rem}
 .small-grid p{color:var(--muted);font-size:.96rem}
 
@@ -212,6 +214,7 @@ footer .sep > * + *::before{content:"/";margin:0 10px;opacity:.5}
   .index img{width:96px;grid-column:2;grid-row:1/4}
   .small-grid{grid-template-columns:minmax(0,1fr)}
   .small-grid img{aspect-ratio:1/1}
+  .small-grid .pair.stack img{aspect-ratio:4/3}
   .seq{grid-auto-columns:minmax(170px,56vw);margin-right:calc(-1*var(--gutter))}
   .job-cta .btn{width:100%;text-align:center}
   .contact > div{grid-template-columns:minmax(0,1fr)}
