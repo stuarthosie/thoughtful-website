@@ -2,12 +2,12 @@
 
 /* Calm and centred: a cream page, the logo brown as the one ink, flared capitals for headings, light typewriter text for reading, and the logo tree reused as a pale motif. One light look, no dark variant. */
 :root{
-  --bg:#F6F1E7;
+  --bg:#EFE8DB;
   --ink:#3B2E29;          /* logo brown */
-  --muted:#6F6159;
-  --line:#DCD3C6;
-  --panel:#FBF8F3;
-  --motif:#FFFDF8;
+  --muted:#5C4F48;
+  --line:#D3C8B8;
+  --panel:#F7F2E9;
+  --motif:#F8F3EA;
   --band:#3B2E29;         /* enquiry and footer */
   --on-band:#F6F1EC;
   --on-band-muted:#CDBFB5;
@@ -269,7 +269,7 @@ footer .legal{flex-basis:100%;margin-top:10px;font-size:.8rem;line-height:1.5}
 
 /* ---------- Theme layer ---------- */
 html{color-scheme:light}
-body{font-size:15px;font-weight:300;line-height:1.7;overflow-x:clip}
+body{font-size:15px;font-weight:400;line-height:1.7;overflow-x:clip}
 b,strong{font-weight:500}
 h1,h2,h3{text-transform:uppercase;letter-spacing:.035em}
 h1{font-size:clamp(1.75rem,3.6vw,2.9rem);line-height:1.16}
@@ -398,3 +398,8 @@ footer .links{font-size:.76rem;font-weight:400;text-transform:uppercase;letter-s
   .index img,.index li a img{width:100%;grid-column:auto;grid-row:auto}
 }
 @media (prefers-reduced-motion:reduce){.index img,.line-link::after{transition:none}}
+
+/* dark bands: the logo brown breaks up the cream so the page is easier on the eye */
+section.index,#away,.hero + section.plain{margin-top:clamp(56px,9vw,120px);padding-block:clamp(56px,8vw,104px);background:var(--band);color:var(--on-band);
+  --bg:var(--band);--ink:var(--on-band);--muted:var(--on-band-muted);--line:var(--band-line);--panel:#2F2420}
+.index h2{color:var(--on-band-muted)}
