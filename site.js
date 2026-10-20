@@ -53,7 +53,8 @@ var FORM_KEY = "15971d74-013d-495a-9956-acf8b0bc31f1";
   function showDraft(){
     document.getElementById("f-mail").href = "mailto:" + CONTACT.email + "?subject=" +
       encodeURIComponent("Project enquiry from " + val("f-name")) + "&body=" + encodeURIComponent(out.value);
-    send.textContent = "Or copy it and text it to " + CONTACT.phone + ". We reply the same day.";
+    document.getElementById("f-wa").href = "https://wa.me/447933005029?text=" + encodeURIComponent(out.value);
+    send.textContent = "Or copy it and send it to " + CONTACT.phone + ". We reply the same day.";
     copied.textContent = "";
     res.hidden = false;
     res.scrollIntoView({block: "nearest"});

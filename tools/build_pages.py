@@ -20,7 +20,7 @@ def between(a, b, text=home):
 
 head_links = between('<link rel="icon" href="/favicon.ico', '<link rel="stylesheet" href="/style.css">')
 header = between('<header class="top">', '</header>')
-footer = between('<footer>', '</footer>')
+footer = between('<footer>', '</footer>') + '\n' + between('<a class="wa-float"', '</a>')
 enquire = between('<section class="enquire" id="enquire">', '</section>')
 places = between('<ul class="places">', '</ul>')
 projects = open("tools/projects.html").read()
@@ -138,7 +138,7 @@ for P in PAGES:
     <h1>{P["h1"]}</h1>
     <div class="sub">
       <p class="lede">{P["lede"]}</p>
-      <div class="actions"><a class="btn" href="#enquire">Tell us about your project</a><a class="btn ghost" href="tel:+447933005029">Call 07933 005029</a></div>
+      <div class="actions"><a class="btn" href="#enquire">Tell us about your project</a><a class="btn ghost" href="https://wa.me/447933005029?text=Hello%2C%20I%27d%20like%20to%20talk%20about%20some%20work." rel="noopener">Message us on WhatsApp</a></div>
     </div>
     <figure{' class="small"' if w < 1000 else ''}>
       <img src="/img/{f}" width="{w}" height="{h}" alt="{alt}">
@@ -171,7 +171,7 @@ for P in PAGES:
 </main>
 
 {local(footer)}
-<script src="/site.js?v=2"></script>
+<script src="/site.js?v=3"></script>
 </body>
 </html>
 '''
