@@ -171,7 +171,7 @@ for P in PAGES:
 </main>
 
 {local(footer)}
-<script src="/site.js"></script>
+<script src="/site.js?v=2"></script>
 </body>
 </html>
 '''
