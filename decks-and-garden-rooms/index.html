@@ -120,7 +120,7 @@
       <div class="stack">
         <p class="label">Enquire</p>
         <h2>Tell us about your project</h2>
-        <p>Call, text or email us directly. Or fill in four lines and it writes the message for you, ready to send.</p>
+        <p>Call, text or email us directly, or fill in four lines below and send it from here. We reply the same day.</p>
         <div class="contact"><div><div class="label">Phone or text</div><span><a href="tel:+447933005029">07933 005029</a></span></div><div><div class="label">Email</div><span><a href="mailto:hello@thoughtfulconstruction.co.uk">hello@thoughtfulconstruction.co.uk</a></span></div><div><div class="label">Instagram</div><span><a href="https://www.instagram.com/thoughtfulconstruction/" rel="noopener">@thoughtfulconstruction</a></span></div></div>
       </div>
       <div>
@@ -143,8 +143,13 @@
               <label class="full">How did you hear about us?<input id="f-source" name="source"></label>
             </div>
           </details>
-          <div class="full actions"><button class="btn" type="submit">Write my message</button><span class="err" id="f-err" role="alert" hidden></span></div>
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="full actions"><button class="btn" type="submit" id="f-go">Send enquiry</button><span class="err" id="f-err" role="alert" hidden></span></div>
         </form>
+        <div class="result" id="f-done" hidden role="status">
+          <span class="label">Sent</span>
+          <p><b>Thank you, we have your message.</b> We reply the same day, by phone or email. If it's urgent, call or text 07933 005029.</p>
+        </div>
         <div class="result" id="result" hidden>
           <span class="label">Your message, ready to send</span>
           <textarea id="f-out" readonly aria-label="Your enquiry message"></textarea>
