@@ -23,5 +23,5 @@ Tools the weekly Marketing agent uses. Run from this folder.
 ## Rules
 - "we" not "I", plain UK English, premium tone, location Fowey, hashtags include #fowey #looe #polperro.
 - Google profile posts: NEVER put a phone number in the text (Google rejects them). Use the Call now or Learn more button.
-- Phone: 07933 005029 is WhatsApp only until the new SIM arrives (calls/SMS don't work).
+- Phone: 07455 432332 is WhatsApp only until the new SIM arrives (calls/SMS don't work).
 - Real job photos beat text slides; paid boosts inflate views (Treehouse 2.7k was paid).

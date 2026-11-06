@@ -49,7 +49,7 @@ const S = [
 `<div class="s dark"><div class="k">When it goes wrong</div><h2>Slates rarely fail. The nails do.</h2><p>Old iron nails rust through, and slates start to slide out. If a whole row has slipped, it's usually the nails or battens behind them that have gone, not the slate.</p>${foot(5)}</div>`,
 `<div class="s light"><div class="k">Repairing it properly</div><h2>Copper nails, lime mortar, matching slate</h2><p>Copper or bronze nails, not plain steel. Lime mortar, not hard cement, which cracks and breaks slates. Reuse the sound slates and match the size and thickness of the rest, so the repair disappears.</p>${foot(6)}</div>`,
 `<div class="s slate">${scales}<div class="k">A two-minute check</div><h2>Walk round your house after a storm</h2><p>Look for slipped or missing slates, gaps at corners and window edges, and rust streaks below nail lines. Catch one slipped slate now and you avoid a soaked wall later.</p>${foot(7)}</div>`,
-`<div class="s dark"><img class="logo" src="${logo}"><h2 style="margin-top:56px">Next in the series: why so many Fowey houses are painted the colours they are.</h2><p>Need a slate-hung wall looked at? Message us on WhatsApp: 07933 005029.</p>${foot(8)}</div>`
+`<div class="s dark"><img class="logo" src="${logo}"><h2 style="margin-top:56px">Next in the series: why so many Fowey houses are painted the colours they are.</h2><p>Need a slate-hung wall looked at? Message us on WhatsApp: 07455 432332.</p>${foot(8)}</div>`
 ];
 (async()=>{const b=await chromium.launch();const pg=await b.newPage({viewport:{width:1080,height:1350}});
 const dir='out/h1-slate-hanging';fs.mkdirSync(dir,{recursive:true});

@@ -1,5 +1,5 @@
 /* Contact details shown on the page. Leave a value empty to hide it. */
-var CONTACT = { phone: "07933 005029", email: "hello@thoughtfulconstruction.co.uk", instagram: "@thoughtfulconstruction" };
+var CONTACT = { phone: "07455 432332", email: "hello@thoughtfulconstruction.co.uk", instagram: "@thoughtfulconstruction" };
 
 /* Web3Forms access key. Enquiries are emailed to the address the key was made for.
    Leave empty and the form falls back to writing the message for the visitor to send. */
@@ -53,7 +53,7 @@ var FORM_KEY = "15971d74-013d-495a-9956-acf8b0bc31f1";
   function showDraft(){
     document.getElementById("f-mail").href = "mailto:" + CONTACT.email + "?subject=" +
       encodeURIComponent("Project enquiry from " + val("f-name")) + "&body=" + encodeURIComponent(out.value);
-    document.getElementById("f-wa").href = "https://wa.me/447933005029?text=" + encodeURIComponent(out.value);
+    document.getElementById("f-wa").href = "https://wa.me/447455432332?text=" + encodeURIComponent(out.value);
     send.textContent = "Or copy it and send it to " + CONTACT.phone + ". We reply the same day.";
     copied.textContent = "";
     res.hidden = false;

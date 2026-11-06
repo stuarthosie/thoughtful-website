@@ -25,7 +25,7 @@ const foot = (i,n) => `<div class="rule"></div><div class="foot"><span>THOUGHTFU
   const slides = [];
   slides.push(`<div class="s dark"><img class="logo" src="${logo}"><div class="k" style="margin-top:56px">${esc(P.kicker)}</div><h1>${esc(P.title)}</h1><div class="swipe" style="margin-top:56px">Swipe →</div>${foot(1,n)}</div>`);
   P.tips.forEach((t,i)=> slides.push(`<div class="s light"><div class="num">${i+1}</div><h2>${esc(t[0])}</h2><p>${esc(t[1])}</p>${foot(i+2,n)}</div>`));
-  slides.push(`<div class="s dark cta"><img class="logo" src="${logo}"><h2 style="margin-top:64px">Building on the Fowey estuary.</h2><p>New builds, renovation, bathrooms, decks and groundworks.</p><p style="margin-top:40px"><b>WhatsApp 07933 005029</b><br>thoughtfulconstruction.co.uk</p>${foot(n,n)}</div>`);
+  slides.push(`<div class="s dark cta"><img class="logo" src="${logo}"><h2 style="margin-top:64px">Building on the Fowey estuary.</h2><p>New builds, renovation, bathrooms, decks and groundworks.</p><p style="margin-top:40px"><b>WhatsApp 07455 432332</b><br>thoughtfulconstruction.co.uk</p>${foot(n,n)}</div>`);
   for (let i=0;i<slides.length;i++){
    await pg.setContent(`<html><head><style>${css}</style></head><body>${slides[i]}</body></html>`);
    await pg.waitForTimeout(150);
